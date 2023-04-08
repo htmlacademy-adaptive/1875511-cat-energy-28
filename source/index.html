@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page__body">
+  <body class="page__body container">
     <header class="main-header">
       <a class="main-header__logo" href="#">
        <img class="main-header__logo-image" src="img/vector/logo-desktop-1.svg" width="202" height="60" alt="Логотип «Cat energy»">
@@ -16,20 +17,20 @@
         <div class="main-navigation__wrapper container">
           <ul class="main-navigation__list site-list">
             <li class="site-list__item site-list__item--current">
-              <a href="#">главная</a>
+              <a class="site-list__link site-list__link--current" href="#">главная</a>
             </li>
             <li class="site-list__item">
-              <a href="catalog.html">каталог продукции</a>
+              <a class="site-list__link" href="catalog.html">каталог продукции</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">подбор программы</a>
+              <a class="site-list__link" href="form.html">подбор программы</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
 
-    <main class="main-container container">
+    <main class="page__main-index main-container container">
       <section class="main-title">
         <h1 class="main-title__title">Функциональное питание для котов</h1>
         <p class="main-title__subtitle">Занялся собой? Займись котом!</p>
@@ -61,23 +62,25 @@
       </section>
 
       <section class="live-example">
-        <h2 class="live-example__title">Живой пример</h2>
-        <p class="live-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <div class="live-example__calculator calculator">
-          <p class="calculator__wrapper">
-            <span class="calculator__weight">5 КГ</span>
-            <span class="calculator__text">снижение веса</span>
-          </p>
-          <p class="calculator__wrapper">
-            <span class="calculator__time-spent">60 ДНЕЙ</span>
-            <span class="calculator__text">затрачено времени</span>
-          </p>
-          <p class="calculator__price">Затраты на питание: 15 000 РУБ.</p>
-        </div>
-        <div class="live-example__slider slider">
-          <img class="slider__image" src="img/cat-before.png" width="280" height="256" alt="Кот до похудения">
-          <img class="slider__image" src="img/cat-after.png." width="280" height="256" alt="Кот после похудения">
-          <button class="slider__button" type="button"></button>
+        <div class="live-example__wrapper">
+          <h2 class="live-example__title">Живой пример</h2>
+          <p class="live-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+          <div class="live-example__calculator calculator">
+            <p class="calculator__wrapper">
+              <span class="calculator__weight">5 КГ</span>
+              <span class="calculator__text">снижение веса</span>
+            </p>
+            <p class="calculator__wrapper">
+              <span class="calculator__time-spent">60 ДНЕЙ</span>
+              <span class="calculator__text">затрачено времени</span>
+            </p>
+            <p class="calculator__price">Затраты на питание: 15 000 РУБ.</p>
+          </div>
+          <div class="live-example__slider slider">
+            <img class="slider__image" src="img/cat-before.png" width="280" height="256" alt="Кот до похудения">
+            <img class="slider__image" src="img/cat-after.png." width="280" height="256" alt="Кот после похудения">
+            <button class="slider__button" type="button"></button>
+          </div>
         </div>
       </section>
     </main>

@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page__body">
+  <body class="page__body container">
     <header class="main-header">
       <a class="main-header__logo" href="index.html">
        <img class="main-header__logo-image" src="img/vector/logo-desktop-1.svg" width="202" height="60" alt="Логотип «Cat energy»">
@@ -16,20 +17,20 @@
         <div class="main-navigation__wrapper container">
           <ul class="main-navigation__list site-list">
             <li class="site-list__item site-list__item--current">
-              <a href="index.html">главная</a>
+              <a class="site-list__link site-list__link--current" href="index.html">главная</a>
             </li>
             <li class="site-list__item">
-              <a href="#">каталог продукции</a>
+              <a class="site-list__link" href="#">каталог продукции</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">подбор программы</a>
+              <a class="site-list__link" href="form.html">подбор программы</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
 
-    <main class="catalog">
+    <main class="page__main-catalog catalog">
       <h1 class="catalog__title">Каталог продукции</h1>
       <section class="catalog__primary primary-catalog">
         <h2 class="visually-hidden">Основной каталог</h2>
@@ -51,7 +52,7 @@
               <span class="primary-catalog__product-data">Цена</span>
               <span class="primary-catalog__product-data">700 ₽</span>
             </p>
-            <button class="primary-catalog__button button" type="button">заказать</button>
+            <a class="primary-catalog__button button" href="#">заказать</a>
           </li>
           <li class="primary-catalog__item">
             <a class="primary-catalog__link" href="#">
@@ -70,7 +71,7 @@
               <span class="primary-catalog__product-data">Цена</span>
               <span class="primary-catalog__product-data">1000 ₽</span>
             </p>
-            <button class="primary-catalog__button button" type="button">заказать</button>
+            <a class="primary-catalog__button button" href="#">заказать</a>
           </li>
           <li class="primary-catalog__item">
             <a class="primary-catalog__link" href="#">
@@ -89,7 +90,7 @@
               <span class="primary-catalog__product-data">Цена</span>
               <span class="primary-catalog__product-data">700 ₽</span>
             </p>
-            <button class="primary-catalog__button button" type="button">заказать</button>
+            <a class="primary-catalog__button button" href="#">заказать</a>
           </li>
           <li class="primary-catalog__item">
             <a class="primary-catalog__link" href="#">
@@ -108,7 +109,7 @@
               <span class="primary-catalog__product-data">Цена</span>
               <span class="primary-catalog__product-data">1000 ₽</span>
             </p>
-            <button class="primary-catalog__button button" type="button">заказать</button>
+            <a class="primary-catalog__button button" href="#">заказать</a>
           </li>
            <li class="primary-catalog__item">
             <a class="primary-catalog__link" href="#">
@@ -127,7 +128,7 @@
               <span class="primary-catalog__product-data">Цена</span>
               <span class="primary-catalog__product-data">400 ₽</span>
             </p>
-            <button class="primary-catalog__button button" type="button">заказать</button>
+            <a class="primary-catalog__button button" href="#">заказать</a>
           </li>
           <li class="primary-catalog__item">
             <a class="primary-catalog__link" href="#">
@@ -146,7 +147,7 @@
               <span class="primary-catalog__product-data">Цена</span>
               <span class="primary-catalog__product-data">700 ₽</span>
             </p>
-            <button class="primary-catalog__button button" type="button">заказать</button>
+            <a class="primary-catalog__button button" href="#">заказать</a>
           </li>
            <li class="primary-catalog__item">
             <a class="primary-catalog__link" href="#">
@@ -165,12 +166,12 @@
               <span class="primary-catalog__product-data">Цена</span>
               <span class="primary-catalog__product-data">500 ₽</span>
             </p>
-            <button class="primary-catalog__button button" type="button">заказать</button>
+            <a class="primary-catalog__button button" href="#">заказать</a>
           </li>
           <li class="primary-catalog__item primary-catalog__item--more-products">
-            <p class="primary-catalog__title">Показать еще 100500 товаров</p>
+            <p class="primary-catalog__subtitle">Показать еще 100500 товаров</p>
             <p class="primary-catalog__text">На самом деле вкусов гораздо больше!</p>
-            <button class="primary-catalog__button button" type="button">показать все</button>
+            <a class="primary-catalog__button button" href="#">показать все</a>
           </li>
         </ul>
       </section>
@@ -179,36 +180,36 @@
         <h2 class="catalog-secondary__title">Дополнительные товары</h2>
         <ul class="catalog-secondary__list">
           <li class="catalog-secondary__item">
-            <h3 class="catalog-secondary__title">Сахарозаменитель</h3>
+            <h3 class="catalog-secondary__subtitle">cахарозаменитель</h3>
             <p class="catalog-secondary__wrapper">
               <span class="catalog-secondary__product-data">1 упаковка (100 г)</span>
               <span class="catalog-secondary__product-data">200 ₽</span>
             </p>
-            <button class="catalog-secondary__button button" type="button">заказать</button>
+            <a class="catalog-secondary__button button" href="#">заказать</a>
           </li>
           <li class="catalog-secondary__item">
-            <h3 class="catalog-secondary__title">питьевая вода</h3>
+            <h3 class="catalog-secondary__subtitle">питьевая вода</h3>
             <p class="catalog-secondary__wrapper">
               <span class="catalog-secondary__product-data">5 литров</span>
               <span class="catalog-secondary__product-data">50 ₽</span>
             </p>
-            <button class="catalog-secondary__button button" type="button">заказать</button>
+            <a class="catalog-secondary__button button" href="#">заказать</a>
           </li>
           <li class="catalog-secondary__item">
-            <h3 class="catalog-secondary__title">молоко</h3>
+            <h3 class="catalog-secondary__subtitle">молоко</h3>
             <p class="catalog-secondary__wrapper">
               <span class="catalog-secondary__product-data">1 литр</span>
               <span class="catalog-secondary__product-data">100 ₽</span>
             </p>
-            <button class="catalog-secondary__button button" type="button">заказать</button>
+            <a class="catalog-secondary__button button" href="#">заказать</a>
           </li>
           <li class="catalog-secondary__item">
-            <h3 class="catalog-secondary__title">витамины</h3>
+            <h3 class="catalog-secondary__subtitle">витамины</h3>
             <p class="catalog-secondary__wrapper">
               <span class="catalog-secondary__product-data">1 упаковка (30 г)</span>
               <span class="catalog-secondary__product-data">300 ₽</span>
             </p>
-            <button class="catalog-secondary__button button" type="button">заказать</button>
+            <a class="catalog-secondary__button button" href="#">заказать</a>
           </li>
         </ul>
         <div class="catalog-secondary__gift gift">
@@ -218,7 +219,7 @@
     </main>
 
      <footer class="footer">
-        <div class="footer__address address">
+        <div class="footer__address address address--secondary">
           <div class="address__wrapper">
             <p class="address__title">приглашаем к сотрудничеству дилеров!</p>
             <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
