@@ -2,3 +2,15 @@
   background-color: @primary;
   color: #000000;
 }
+
+@media (min-width: @tablet-width) {
+  .main-navigation__toggle {
+  display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-navigation__list {
+  display: flex;
+  }
+}

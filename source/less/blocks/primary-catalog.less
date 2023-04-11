@@ -66,3 +66,17 @@
 
   color: #444444;
 }
+
+@media (min-width: @tablet-width) {
+  .primary-catalog__list {
+  display: grid;
+  grid-template-columns: 324px 324px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .primary-catalog__list {
+  display: grid;
+  grid-template-columns: 245px 245px 245px 245px;
+  }
+}

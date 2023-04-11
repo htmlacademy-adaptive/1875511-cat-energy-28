@@ -37,7 +37,8 @@
   list-style: none;
 }
 
-.form__feilds-list {
+.form__feilds-list,
+.form__contacts-feilds-list {
   margin: 0;
   padding: 0;
 
@@ -58,4 +59,39 @@
   font-size: 14px;
   line-height: 16px;
   text-align: center;
+}
+
+
+@media (min-width: @tablet-width) {
+  .form__checkbox-list {
+    display: grid;
+    grid-template-columns: 220px 220px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form__button-text-wrapper {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__fieldset-radio-fieldset-wrapper {
+    display: flex;
+
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__checkbox-list {
+    display: grid;
+    grid-template-columns: 220px 220px 220px 220px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__contacts-feilds-list {
+    display: flex;
+  }
 }

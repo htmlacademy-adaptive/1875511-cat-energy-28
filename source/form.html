@@ -2,11 +2,12 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body container">
-    <header class="main-header">
+    <header class="page__header main-header">
       <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-image" src="img/vector/header-logo-mobile.svg" width="202" height="60" alt="Логотип «Cat energy»">
       </a>
@@ -37,52 +38,54 @@
       <section class="main-inner__program-selection program-selection">
         <h2 class="visually-hidden">Форма подбора программы</h2>
         <form class="program-selection__form form" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="form__fieldset">
-            <legend class="visually-hidden">Характеристики кота</legend>
-            <ul class="form__feilds-list">
-              <li class="form__feilds-item text-feild">
-                <label class="text-feild__label">ИМЯ:*
-                  <input class="text-feild__input text-feild__input--name" type="text" name="name" placeholder="барсик" required>
-                </label>
-              </li>
-              <li class="form__feilds-item text-feild">
-                <label class="text-feild__label">Вес (кг):*
-                  <input class="text-feild__input text-feild__input--number" type="number" name="weight" placeholder="7" required>
-                </label>
-              </li>
-              <li class="form__feilds-item text-feild">
-                <label class="text-feild__label">Возраст (лет):
-                  <input class="text-feild__input text-feild__input--number" type="number" name="age" placeholder="7">
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="form__radio-fieldset">
-            <legend class="visually-hidden">Выбор программы питания</legend>
-            <ul class="form__radio-list">
-              <li class="form__radio-item radio-feild">
-                <label class="radio-feild__label">
-                  <input class="radio-feild__input" type="radio" name="reduce" value="reduce" checked>
-                  <span>похудение</span>
-                </label>
-              </li>
-              <li class="form__radio-item radio-feild">
-                <label class="radio-feild__label">
-                  <input class="radio-feild__input" type="radio" name="gain" value="gain">
-                  <span>Набор массы</span>
-                </label>
-              </li>
-              <li class="form__radio-item radio-feild">
-                <label class="radio-feild__label">
-                  <input class="radio-feild__input" type="radio" name="undecided" value="undecided">
-                  <span>Не знаю (Нужен ваш совет)</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+          <div class="form__fieldset-radio-fieldset-wrapper">
+            <fieldset class="form__fieldset">
+              <legend class="visually-hidden">Характеристики кота</legend>
+              <ul class="form__feilds-list">
+                <li class="form__feilds-item text-feild">
+                  <label class="text-feild__label">ИМЯ:*
+                    <input class="text-feild__input text-feild__input--name" type="text" name="name" placeholder="барсик" required>
+                  </label>
+                </li>
+                <li class="form__feilds-item text-feild">
+                  <label class="text-feild__label">Вес (кг):*
+                    <input class="text-feild__input text-feild__input--number" type="number" name="weight" placeholder="7" required>
+                  </label>
+                </li>
+                <li class="form__feilds-item text-feild">
+                  <label class="text-feild__label">Возраст (лет):
+                    <input class="text-feild__input text-feild__input--number" type="number" name="age" placeholder="7">
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form__radio-fieldset">
+              <legend class="visually-hidden">Выбор программы питания</legend>
+              <ul class="form__radio-list">
+                <li class="form__radio-item radio-feild">
+                  <label class="radio-feild__label">
+                    <input class="radio-feild__input" type="radio" name="reduce" value="reduce" checked>
+                    <span>похудение</span>
+                  </label>
+                </li>
+                <li class="form__radio-item radio-feild">
+                  <label class="radio-feild__label">
+                    <input class="radio-feild__input" type="radio" name="gain" value="gain">
+                    <span>Набор массы</span>
+                  </label>
+                </li>
+                <li class="form__radio-item radio-feild">
+                  <label class="radio-feild__label">
+                    <input class="radio-feild__input" type="radio" name="undecided" value="undecided">
+                    <span>Не знаю (Нужен ваш совет)</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
           <fieldset class="form__fieldset">
             <legend class="form__title">Контактные данные (владельца кота)</legend>
-            <ul class="form__feilds-list">
+            <ul class="form__contacts-feilds-list">
               <li class="form__feilds-item text-feild">
                 <label class="text-feild__label">E-mail:*
                   <input class="text-feild__input text-feild__input--email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
@@ -132,8 +135,10 @@
               </li>
             </ul>
           </fieldset>
-          <button class="form__button button" type="submit">отправить заявку</button>
-          <p class="form__required-text">* — Обязательные поля</p>
+          <div class="form__button-text-wrapper">
+            <button class="form__button button" type="submit">отправить заявку</button>
+            <p class="form__required-text">* — Обязательные поля</p>
+          </div>
         </form>
       </section>
     </main>

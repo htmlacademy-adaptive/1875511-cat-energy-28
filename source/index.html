@@ -2,11 +2,12 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body container">
-    <header class="main-header">
+    <header class="page__header main-header">
       <a class="main-header__logo" href="#">
         <img class="main-header__logo-image" src="img/vector/header-logo-mobile.svg" width="202" height="60" alt="Логотип «Cat energy»">
       </a>
@@ -65,18 +66,27 @@
 
       <section class="live-example">
         <div class="live-example__wrapper">
-          <h2 class="live-example__title">Живой пример</h2>
-          <p class="live-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <div class="live-example__calculator calculator">
-            <p class="calculator__wrapper">
-              <span class="calculator__weight">5 КГ</span>
-              <span class="calculator__text">снижение веса</span>
-            </p>
-            <p class="calculator__wrapper">
-              <span class="calculator__time-spent">60 ДНЕЙ</span>
-              <span class="calculator__text">затрачено времени</span>
-            </p>
-            <p class="calculator__price">Затраты на питание: 15 000 РУБ.</p>
+          <div class="live-example__title-calculator-wrapper">
+            <h2 class="live-example__title">Живой пример</h2>
+            <p class="live-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <div class="live-example__calculator calculator">
+              <div class="calculator__wrapper-1">
+                <p class="calculator__wrapper">
+                  <span class="calculator__weight">5 КГ</span>
+                  <span class="calculator__text">снижение веса</span>
+                </p>
+                <p class="calculator__wrapper">
+                  <span class="calculator__time-spent">60 ДНЕЙ</span>
+                  <span class="calculator__text">затрачено времени</span>
+                </p>
+              </div>
+              <div class="calculator__wrapper-2">
+                <p class="calculator__price">
+                  <span>Затраты на питание:</span>
+                  <span>15 000 РУБ.</span>
+                </p>
+              </div>
+            </div>
           </div>
           <div class="live-example__slider slider">
             <img class="slider__image" src="img/cat-before.png" width="280" height="256" alt="Кот до похудения">
