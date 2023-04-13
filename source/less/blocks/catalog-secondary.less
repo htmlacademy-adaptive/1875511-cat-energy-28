@@ -2,7 +2,7 @@
   margin: 0;
   padding: 25px 0 0 20px;
 
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -18,10 +18,9 @@
 
 .catalog-secondary__item {
   margin: 0 0 20px 0;
-
 }
 
-.catalog-secondary__wrapper {
+.catalog-secondary__product-data-wrapper {
   margin: 0;
   padding: 0;
 }
@@ -30,7 +29,7 @@
   margin: 0;
   padding: 0 0 12px 0;
 
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -43,7 +42,7 @@
   margin: 0 0 14px 0;
   padding: 0;
 
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -57,5 +56,54 @@
   padding: 0 20px 0 20px;
   max-width: 280px;
   min-height: 290px;
+}
 
+@media (min-width: @desktop-width) {
+  .catalog-secondary {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-secondary__item {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-secondary__subtitle-product-data-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-secondary__product-data-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-secondary__subtitle-product-data-wrapper {
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-secondary__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-secondary__subtitle-product-data-wrapper {
+    display: flex;
+  }
 }
