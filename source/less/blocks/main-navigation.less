@@ -3,6 +3,88 @@
   color: #000000;
 }
 
+@media (min-width: @desktop-width) {
+  .main-navigation {
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
+
+.main-navigation__toggle {
+  position: absolute;
+  content: "";
+  top: 24px;
+  right: 20px;
+  display: block;
+  min-width: 24px;
+  min-height: 18px;
+
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: @secondary;
+  }
+}
+
+.main-navigation--closed .main-navigation__toggle::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: #000000;
+  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+}
+
+.main-navigation--closed .main-navigation__toggle:active::before {
+  background-color: fade(#000000, 30%);
+  box-shadow:
+    0 8px 0 0 fade(#000000, 30%),
+    0 16px 0 0 fade(#000000, 30%);
+}
+
+.main-navigation--opened .main-navigation__toggle {
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    top: 8px;
+    right: 0;
+    width: 24px;
+    height: 1.5px;
+    background-color: #000000;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(#000000, 30%);
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-navigation--opened .main-navigation__wrapper {
+    position: absolute;
+    content: "";
+    top: 64px;
+    left: 0;
+
+    z-index: 10;
+    min-width: 320px;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .main-navigation__toggle {
     display: none;
@@ -12,5 +94,25 @@
 @media (min-width: @tablet-width) {
   .main-navigation__list {
     display: flex;
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-navigation--closed .main-navigation__wrapper {
+    display: none;
+  }
+}
+
+.main-navigation--nojs .main-navigation__toggle {
+  display: none;
+}
+
+.main-navigation--nojs .main-navigation__wrapper {
+  position: static;
+}
+
+@media (min-width: @desktop-width) {
+  .main-navigation__wrapper {
+    margin-top: 70px;
   }
 }

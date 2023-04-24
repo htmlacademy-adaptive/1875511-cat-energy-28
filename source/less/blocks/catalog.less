@@ -1,10 +1,19 @@
 .catalog__title {
-  margin: 0;
-  padding: 27px 42px 27px 20px;
+  margin: 30px 0 50px 0;
+  padding: 0;
 
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog__title {
+    margin: 30px 0 150px 0;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
