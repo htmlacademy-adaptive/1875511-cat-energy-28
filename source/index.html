@@ -9,7 +9,11 @@
   <body class="page__body">
     <header class="page__header main-header container">
       <a class="main-header__logo" href="#">
-        <img class="main-header__logo-image" src="img/vector/header-logo-mobile.svg" width="202" height="60" alt="Логотип «Cat energy»">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/vector/header-logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/vector/header-logo-tablet.svg">
+          <img class="main-header__logo-image" src="img/vector/header-logo-mobile.svg" width="202" height="60" alt="Логотип «Cat energy»">
+        </picture>
       </a>
       <nav class="main-navigation main-navigation--closed main-navigation--nojs">
         <button class="main-navigation__toggle" type="button">
