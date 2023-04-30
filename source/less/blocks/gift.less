@@ -13,10 +13,43 @@
   color: @primary;
 }
 
+.gift__text::after {
+  position: absolute;
+  content: "";
+  top: 58px;
+  left: 101px;
+  width: 80px;
+  height: 83px;
+  z-index: 10;
+  background-image: url("../img/vector/gift-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-width: @tablet-width) and (max-width: @desktop-width) {
+  .gift__text {
+    padding: 70px 124px 70px 422px;
+  }
+}
+
 .gift__wrapper {
-  background-color: #000000;
+  position: relative;
+  background-color: #68b738;
   background-image: url("../img/catalog-secondary-bg-image.jpg");
   background-repeat: no-repeat;
   background-size: 280px 290px;
   background-position: top;
+}
+
+@media (min-width: @tablet-width) and (max-width: @desktop-width) {
+  .gift__wrapper {
+    min-width: 708px;
+    min-height: 200px;
+    background-color: #68b738;
+    background-image: url("../img/catalog-secondary-bg-image-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 }

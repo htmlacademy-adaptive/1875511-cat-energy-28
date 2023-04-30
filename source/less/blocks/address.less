@@ -1,7 +1,33 @@
+@media (min-width: @desktop-width) {
+  .address {
+    position: relative;
+  }
+}
+
 .address__wrapper {
   display: flex;
+  justify-content: space-between;
   margin: 0;
-  padding: 26px 20px 26px 20px;
+  padding: 26px 0 26px 0;
+}
+
+@media (min-width: @tablet-width) {
+  .address__wrapper {
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .address__wrapper {
+    position: absolute;
+    content: "";
+    width: 565px;
+    height: 200px;
+    top: 95px;
+    left: 110px;
+
+    background-color: #ffffff;
+  }
 }
 
 .address__title {
@@ -16,6 +42,15 @@
   text-transform: uppercase;
 }
 
+@media (min-width: @tablet-width) {
+  .address__title {
+    padding: 60px 40px 26px 40px;
+
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
 .address__text {
   margin: 0;
   padding: 0;
@@ -27,4 +62,13 @@
   line-height: 20px;
 
   color: #444444;
+}
+
+@media (min-width: @tablet-width) {
+  .address__text {
+    padding: 60px 40px 26px 40px;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

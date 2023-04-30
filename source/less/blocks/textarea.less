@@ -1,10 +1,26 @@
 .textarea__input {
+  max-width: 280px;
+  padding: 10px 12px 0 15px;
+  box-sizing: border-box;
+
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  border: 1px solid #e7e7e7;
 
   color: #444444;
+}
+
+
+@media (min-width: @tablet-width) {
+  .textarea__input {
+    padding: 10px 20px 0 20px;
+    min-width: 630px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

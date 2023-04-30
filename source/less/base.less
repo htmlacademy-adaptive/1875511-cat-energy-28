@@ -2,6 +2,7 @@
 body {
   margin: 0;
   padding: 0;
+  min-width: 320px;
 
   background-color: @primary;
   font-family: "Lato", sans-serif;
@@ -9,4 +10,10 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+}
+
+@media (min-width: @desktop-width) {
+  body {
+    position: relative;
+  }
 }
