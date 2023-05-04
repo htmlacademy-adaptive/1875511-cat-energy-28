@@ -27,29 +27,51 @@
   background-size: cover;
 }
 
+@media (min-width: @desktop-width) {
+  .gift__text::after {
+    left: 85px;
+  }
+}
+
 @media (min-width: @tablet-width) and (max-width: @desktop-width) {
   .gift__text {
     padding: 70px 124px 70px 422px;
   }
 }
 
+
 .gift__wrapper {
+  min-width: 245px;
+  max-height: 288px;
   position: relative;
   background-color: #68b738;
-  background-image: url("../img/catalog-secondary-bg-image.jpg");
+  background-image: url("../img/catalog-secondary-bg-image-1x.jpg");
   background-repeat: no-repeat;
-  background-size: 280px 290px;
+  background-size: cover;
   background-position: top;
 }
+
+@media (min-resolution: 2dppx) {
+  .gift__wrapper {
+    background-image: url("../img/catalog-secondary-bg-image-2x.jpg");
+  }
+}
+
 
 @media (min-width: @tablet-width) and (max-width: @desktop-width) {
   .gift__wrapper {
     min-width: 708px;
     min-height: 200px;
     background-color: #68b738;
-    background-image: url("../img/catalog-secondary-bg-image-tablet.jpg");
+    background-image: url("../img/catalog-secondary-bg-image-tablet-1x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .gift__wrapper {
+      background-image: url("../img/catalog-secondary-bg-image-tablet-2x.jpg");
+    }
   }
 }

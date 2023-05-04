@@ -20,19 +20,14 @@
   .primary-catalog__item {
     position: relative;
     padding: 0 36px;
-    max-width: 324px;
+    max-width: 245px;
     min-height: 430px;
+    max-height: 430px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 
     background-color: @secondary;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .primary-catalog__item {
-    max-width: 245px;
   }
 }
 
@@ -176,17 +171,8 @@
 
 @media (min-width: @tablet-width) {
   .primary-catalog__image {
-    position: absolute;
-    top: -20px;
-    left: 120px;
     display: block;
     margin: 0 auto;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .primary-catalog__image {
-    left: 85px;
   }
 }
 

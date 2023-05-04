@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
@@ -40,7 +44,11 @@
         <div class="main-title__wrapper container">
           <h1 class="main-title__title">Функциональное<br> питание для котов</h1>
           <p class="main-title__subtitle">Занялся собой? Займись котом!</p>
-          <img class="main-title__image" src="img/main-title-image.png" width="320" height="270" alt="Функциональное питание для котов">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/main-title-image-desktop-1x.png 1x, img/main-title-image-desktop-2x.png 2x" width="522" heigth="500">
+            <source media="(min-width: 768px)" srcset="img/main-title-image-tablet-1x.png 1x, img/main-title-image-tablet-2x.png 2x" width="709" heigth="609">
+            <img class="main-title__image" src="img/main-title-image-1x.png" srcset="img/main-title-image-2x.png 2x" width="320" height="270" alt="Функциональное питание для котов">
+          </picture>
           <a class="main-title__button button" href="form.html">подобрать программу</a>
         </div>
       </section>
@@ -93,8 +101,14 @@
             </div>
           </div>
           <div class="live-example__slider slider">
-            <img class="slider__image" src="img/cat-before.png" width="280" height="256" alt="Кот до похудения">
-            <img class="slider__image" src="img/cat-after.png." width="280" height="256" alt="Кот после похудения">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/cat-before-tablet-1x.png 1x, img/cat-before-tablet-2x.png 2x" width="560" heigth="512">
+              <img class="slider__image" src="img/cat-before-1x.png" srcset="img/cat-before-2x.png 2x" width="280" height="256" alt="Кот до похудения">
+            </picture>
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/cat-after-tablet-1x.png 1x, img/cat-after-tablet-2x.png 2x" width="560" heigth="512">
+              <img class="slider__image" src="img/cat-after-1x.png" srcset="img/cat-after-2x.png 2x" width="280" height="256" alt="Кот после похудения">
+            </picture>
             <button class="slider__button" type="button"></button>
           </div>
         </div>
