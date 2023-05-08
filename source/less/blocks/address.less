@@ -25,6 +25,7 @@
     height: 200px;
     top: 95px;
     left: 110px;
+    box-sizing: border-box;
 
     background-color: #ffffff;
   }
@@ -51,6 +52,12 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .address__title {
+    padding: 40px 40px 26px 80px;
+  }
+}
+
 .address__text {
   margin: 0;
   padding: 0;
@@ -70,5 +77,40 @@
 
     font-size: 16px;
     line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .address__text {
+    padding: 40px 60px 26px 40px;
+  }
+}
+
+.address__map {
+  height: 362px;
+
+  @media (min-width: @tablet-width) {
+    height: 400px;
+  }
+}
+
+.address__iframe {
+  border: none;
+  margin-left: -20px;
+}
+
+@media (min-width: @tablet-width) {
+  .address__iframe {
+    margin-left: -30px;
+    width: 768px;
+    height: 400px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .address__iframe {
+    margin-left: -110px;
+    width: 1440px;
+    height: 400px;
   }
 }
