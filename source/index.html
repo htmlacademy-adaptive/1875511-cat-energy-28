@@ -45,8 +45,8 @@
           <h1 class="main-title__title">Функциональное<br> питание для котов</h1>
           <p class="main-title__subtitle">Занялся собой? Займись котом!</p>
           <picture>
-            <source media="(min-width: 1440px)" srcset="img/main-title-image-desktop-1x.png 1x, img/main-title-image-desktop-2x.png 2x" width="522" heigth="500">
-            <source media="(min-width: 768px)" srcset="img/main-title-image-tablet-1x.png 1x, img/main-title-image-tablet-2x.png 2x" width="709" heigth="609">
+            <source media="(min-width: 1440px)" srcset="img/main-title-image-desktop-1x.png 1x, img/main-title-image-desktop-2x.png 2x" width="522" height="500">
+            <source media="(min-width: 768px)" srcset="img/main-title-image-tablet-1x.png 1x, img/main-title-image-tablet-2x.png 2x" width="709" height="609">
             <img class="main-title__image" src="img/main-title-image-1x.png" srcset="img/main-title-image-2x.png 2x" width="320" height="270" alt="Функциональное питание для котов">
           </picture>
           <a class="main-title__button button" href="form.html">подобрать программу</a>
@@ -102,11 +102,15 @@
           </div>
           <div class="live-example__slider slider">
             <picture>
-              <source media="(min-width: 768px)" srcset="img/cat-before-tablet-1x.png 1x, img/cat-before-tablet-2x.png 2x" width="560" heigth="512">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-before-tablet-1x.webp 1x, img/cat-before-tablet-2x.webp 2x" width="560" height="512">
+              <source type="image/webp" srcset="img/cat-before-1x.webp 1x, img/cat-before-2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="img/cat-before-tablet-1x.png 1x, img/cat-before-tablet-2x.png 2x" width="560" height="512">
               <img class="slider__image" src="img/cat-before-1x.png" srcset="img/cat-before-2x.png 2x" width="280" height="256" alt="Кот до похудения">
             </picture>
             <picture>
-              <source media="(min-width: 768px)" srcset="img/cat-after-tablet-1x.png 1x, img/cat-after-tablet-2x.png 2x" width="560" heigth="512">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-after-tablet-1x.webp 1x, img/cat-after-tablet-2x.webp 2x" width="560" height="512">
+              <source type="image/webp" srcset="img/cat-after-1x.webp 1x, img/cat-after-2x.webp">
+              <source media="(min-width: 768px)" srcset="img/cat-after-tablet-1x.png 1x, img/cat-after-tablet-2x.png 2x" width="560" height="512">
               <img class="slider__image" src="img/cat-after-1x.png" srcset="img/cat-after-2x.png 2x" width="280" height="256" alt="Кот после похудения">
             </picture>
             <button class="slider__button" type="button"></button>
@@ -122,7 +126,7 @@
             <p class="address__text">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</p>
           </div>
           <div class="address__map">
-              <img class="address__image" src="img/footer-map.jpg" width="320" height="362" alt="Карта">
+            <iframe class="address__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.822446975774!2d30.314833977900076!3d59.968268659713075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1683276978234!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
           </div>
         </div>
         <div class="footer__contacts contacts">
