@@ -18,6 +18,12 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .main-inner__title {
+    margin-top: 120px;
+  }
+}
+
 .main-inner__text {
   margin: 0 0 40px 0;
   padding: 0;
@@ -36,5 +42,11 @@
     padding-left: 40px;
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+@media (min-width: @tablet-width) and (max-width: @desktop-width) {
+  .main-inner__text {
+    margin-bottom: 60px;
   }
 }
