@@ -11,7 +11,7 @@
 
 .main-title__title {
   margin: 0;
-  padding: 27px 36px 25px 36px;
+  padding: 27px 0 25px 0;
 
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -69,6 +69,11 @@
     padding-left: 80px;
     padding-bottom: 52px;
   }
+}
+
+.main-title__image {
+  margin-left: -20px;
+  object-fit: contain;
 }
 
 @media (min-width: @tablet-width) and (max-width: @desktop-width) {
@@ -155,7 +160,7 @@
   .main-title__button {
     display: block;
     box-sizing: border-box;
-    padding: 7px 44px 7px 44px;
+    padding: 10px 44px 10px 44px;
     max-width: 280px;
   }
 }
