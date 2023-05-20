@@ -33,6 +33,14 @@
   }
 }
 
+.checkbox-feild__control-mark:hover {
+  outline: 1px solid #cdcdcd;
+}
+
+.checkbox-feild__input:disabled ~ span {
+  opacity: 0.3;
+}
+
 .checkbox-feild__input[type="checkbox"]:checked + .checkbox-feild__control-mark::after {
   content: "";
   position: absolute;

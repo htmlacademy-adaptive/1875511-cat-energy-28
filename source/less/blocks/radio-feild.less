@@ -34,6 +34,14 @@
   }
 }
 
+.radio-feild__control-mark:hover {
+  outline: 1px solid #cdcdcd;
+}
+
+.radio-feild__input:disabled ~ span {
+  opacity: 0.3;
+}
+
 .radio-feild__input[type="radio"]:checked + .radio-feild__control-mark::after {
   content: "";
   position: absolute;
