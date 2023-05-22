@@ -5,7 +5,11 @@
   z-index: 1;
 
   @media (min-width: @tablet-width) {
-    min-height: 660px;
+    min-height: 612px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 0;
   }
 }
 
@@ -15,14 +19,22 @@
   overflow: hidden;
   z-index: 2;
 
+  background-color: #f2f2f2;
+
   @media (min-width: @tablet-width) {
+    background: linear-gradient(to bottom,#fff 150px,#f2f2f2 36px);
+    width: 280px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background: linear-gradient(to bottom,#fff 138px,#f2f2f2 36px);
     width: 280px;
   }
 }
 
 .slider__wrapper-after {
   position: absolute;
-  left: 5px;
+  left: 0;
   z-index: 1;
 }
 
@@ -36,41 +48,44 @@
   border: none;
   border-radius: 50%;
   z-index: 3;
-  left: 120px;
+  left: 122px;
   top: 109px;
 
   @media (min-width: @tablet-width) {
     left: 262px;
+    top: 234px;
+  }
+
+  @media (min-width: @desktop-width) {
     top: 240px;
   }
 }
 
-/*
-.slider::after {
+.slider__button::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 118px;
-  width: 40px;
+  width: 4px;
   height: 258px;
-  mask-image: url("../img/vector/stack.svg#slider");
+  top: -110px;
+  right: 17px;
+  z-index: -1;
+
   background-color: #666666;
-  z-index: 3;
+  border-radius: 4px;
 
   @media (min-width: @tablet-width) {
-    mask-image: url("../img/vector/stack.svg#slider-tablet");
     height: 512px;
-    left: 260px;
-    top: 2px;
+    top: -240px;
   }
 }
 
-*/
-
 .slider__button-svg {
   position: absolute;
-  top: -55px;
-  left: -130px;
-  fill: red;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  left: -1px;
+
+  color: #666666;
 }
 
