@@ -1,4 +1,5 @@
 .text-feild__label {
+  position: relative;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -17,8 +18,8 @@
 }
 
 .text-feild__input {
-  margin: 0 0 0 10px;
-  padding: 14px 8px 13px 20px;
+  margin: 0 0 0 6px;
+  padding: 14px 40px 13px 20px;
 
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -29,12 +30,117 @@
   border: 1px solid #e7e7e7;
 
   color: #444444;
+
+  &:hover {
+    outline: 1px solid #e7e7e7;
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
+  }
+}
+
+.text-feild__input--error {
+  border: 2px solid #ff8282;
 }
 
 @media (min-width: @tablet-width) {
   .text-feild__input {
-    padding: 11px 20px 11px 20px;
+    padding: 11px 40px 11px 20px;
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.text-feild__input--name {
+  box-sizing: border-box;
+  width: 228px;
+
+  @media (min-width: @tablet-width) {
+    width: 570px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 509px;
+  }
+}
+
+.text-feild__input--number {
+  box-sizing: border-box;
+  width: 207px;
+
+  @media (min-width: @tablet-width) {
+    width: 542px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 481px;
+  }
+}
+
+.text-feild__input--age {
+  box-sizing: border-box;
+  width: 173px;
+
+  @media (min-width: @tablet-width) {
+    width: 500px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 439px;
+  }
+}
+
+.text-feild__input--email {
+  box-sizing: border-box;
+  width: 220px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    width: 548px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 486px;
+  }
+}
+
+.text-feild__input--tel {
+  box-sizing: border-box;
+  width: 202px;
+
+  @media (min-width: @tablet-width) {
+    width: 529px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 467px;
+  }
+}
+
+.text-feild__label--email::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  mask-image: url("../img/vector/stack.svg#email");
+  background-color: #222222;
+  top: 4px;
+  right: 14px;
+}
+
+.text-feild__label--phone::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  mask-image: url("../img/vector/stack.svg#phone");
+  background-color: #222222;
+  top: 4px;
+  right: 14px;
+}
+
+.text-feild__label--email:focus-within::after,
+.text-feild__label--phone:focus-within::after {
+  background-color: #68b738;
 }

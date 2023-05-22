@@ -14,6 +14,8 @@
 @media (min-width: @tablet-width) {
   .address__wrapper {
     justify-content: space-between;
+    box-sizing: border-box;
+    min-height: 200px;
   }
 }
 
@@ -45,7 +47,7 @@
 
 @media (min-width: @tablet-width) {
   .address__title {
-    padding: 60px 40px 26px 40px;
+    padding: 34px 40px 26px 40px;
 
     font-size: 20px;
     line-height: 26px;
@@ -54,7 +56,7 @@
 
 @media (min-width: @desktop-width) {
   .address__title {
-    padding: 40px 40px 26px 80px;
+    padding: 34px 40px 26px 80px;
   }
 }
 
@@ -73,8 +75,9 @@
 
 @media (min-width: @tablet-width) {
   .address__text {
-    padding: 60px 40px 26px 40px;
+    padding: 30px 40px 26px 40px;
 
+    text-align: end;
     font-size: 16px;
     line-height: 20px;
   }
@@ -82,7 +85,9 @@
 
 @media (min-width: @desktop-width) {
   .address__text {
-    padding: 40px 60px 26px 40px;
+    padding: 30px 78px 26px 40px;
+
+    text-align: start;
   }
 }
 
@@ -91,6 +96,10 @@
 
   @media (min-width: @tablet-width) {
     height: 400px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: -40px;
   }
 }
 
@@ -109,7 +118,7 @@
 
 @media (min-width: @desktop-width) {
   .address__iframe {
-    margin-left: -110px;
+    margin-left: -70px;
     width: 1440px;
     height: 400px;
   }

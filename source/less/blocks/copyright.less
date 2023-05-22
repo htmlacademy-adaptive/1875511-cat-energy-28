@@ -1,7 +1,8 @@
 .copyright__link {
   display: flex;
+  position: relative;
   align-items: center;
-
+  justify-content: space-between;
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -12,6 +13,22 @@
   color: #444444;
 }
 
+.copyright {
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 168px;
+  }
+}
+
+.copyright__link::after {
+  content: "";
+  width: 27px;
+  height: 34px;
+  mask-image: url("../img/vector/stack.svg#html-academy");
+  background-color: #666666;
+}
+
 .copyright__image {
   margin-left: 130px;
 }
@@ -20,4 +37,12 @@
   .copyright__image {
     margin-left: 26px;
   }
+}
+
+.copyright__link:hover {
+  color: #68b738;
+}
+
+.copyright__link:hover::after {
+  background-color: #68b738;
 }

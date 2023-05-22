@@ -1,4 +1,6 @@
 .checkbox-feild__label {
+  padding-left: 50px;
+  position: relative;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -9,7 +11,47 @@
 
 @media (min-width: @tablet-width) {
   .checkbox-feild__label {
+    padding-left: 60px;
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.checkbox-feild__control-mark {
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.checkbox-feild__control-mark:hover {
+  outline: 1px solid #cdcdcd;
+}
+
+.checkbox-feild__input:disabled ~ span {
+  opacity: 0.3;
+}
+
+.checkbox-feild__input[type="checkbox"]:checked + .checkbox-feild__control-mark::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 8px;
+  width: 18px;
+  height: 14px;
+  mask-image: url("../img/vector/stack.svg#checkbox-mobile");
+  background-color: #68b738;
+
+  @media (min-width: @tablet-width) {
+    width: 26px;
+    height: 26px;
+    mask-image: url("../img/vector/stack.svg#checkbox");
   }
 }
