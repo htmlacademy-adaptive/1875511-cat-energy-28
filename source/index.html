@@ -94,26 +94,33 @@
               </div>
               <div class="calculator__wrapper-2">
                 <p class="calculator__price">
-                  <span>Затраты на питание:</span>
-                  <span>15 000 РУБ.</span>
+                  <span class="calculator__price-text-1">Затраты на питание:</span>
+                  <span class="calculator__price-text-2">15 000 РУБ.</span>
                 </p>
               </div>
             </div>
           </div>
           <div class="live-example__slider slider">
-            <picture>
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-before-tablet-1x.webp 1x, img/cat-before-tablet-2x.webp 2x" width="560" height="512">
-              <source type="image/webp" srcset="img/cat-before-1x.webp 1x, img/cat-before-2x.webp 2x">
-              <source media="(min-width: 768px)" srcset="img/cat-before-tablet-1x.png 1x, img/cat-before-tablet-2x.png 2x" width="560" height="512">
-              <img class="slider__image" src="img/cat-before-1x.png" srcset="img/cat-before-2x.png 2x" width="280" height="256" alt="Кот до похудения">
-            </picture>
-            <picture>
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-after-tablet-1x.webp 1x, img/cat-after-tablet-2x.webp 2x" width="560" height="512">
-              <source type="image/webp" srcset="img/cat-after-1x.webp 1x, img/cat-after-2x.webp">
-              <source media="(min-width: 768px)" srcset="img/cat-after-tablet-1x.png 1x, img/cat-after-tablet-2x.png 2x" width="560" height="512">
-              <img class="slider__image" src="img/cat-after-1x.png" srcset="img/cat-after-2x.png 2x" width="280" height="256" alt="Кот после похудения">
-            </picture>
+            <div class="slider__wrapper-before">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-before-tablet-1x.webp 1x, img/cat-before-tablet-2x.webp 2x" width="560" height="512">
+                <source type="image/webp" srcset="img/cat-before-1x.webp 1x, img/cat-before-2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/cat-before-tablet-1x.png 1x, img/cat-before-tablet-2x.png 2x" width="560" height="512">
+                <img class="slider__image" src="img/cat-before-1x.png" srcset="img/cat-before-2x.png 2x" width="280" height="256" alt="Кот до похудения">
+              </picture>
+            </div>
+            <div class="slider__wrapper-after">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-after-tablet-1x.webp 1x, img/cat-after-tablet-2x.webp 2x" width="560" height="512">
+                <source type="image/webp" srcset="img/cat-after-1x.webp 1x, img/cat-after-2x.webp">
+                <source media="(min-width: 768px)" srcset="img/cat-after-tablet-1x.png 1x, img/cat-after-tablet-2x.png 2x" width="560" height="512">
+                <img class="slider__image" src="img/cat-after-1x.png" srcset="img/cat-after-2x.png 2x" width="280" height="256" alt="Кот после похудения">
+              </picture>
+            </div>
             <button class="slider__button" type="button">
+              <svg class="slider__button-svg">
+                <use xlink:href="img/vector/stack.svg#slider"></use>
+              </svg>
               <span class="visually-hidden">Слайдер</span>
             </button>
           </div>
@@ -135,7 +142,10 @@
           <div class="contacts__wrapper container">
             <div class="contacts__logo">
               <a class="contacts__logo-link" href="#">
-                <img class="contacts__logo-image" src="img/vector/icons/main-logo.svg" width="128" height="24" alt="Логотип «Cat energy»">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/vector/icons/main-logo-tablet.svg" width="143" height="27">
+                  <img class="contacts__logo-image" src="img/vector/icons/main-logo.svg" width="128" height="24" alt="Логотип «Cat energy»">
+                </picture>
               </a>
             </div>
             <ul class="contacts__list">

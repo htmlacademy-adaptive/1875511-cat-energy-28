@@ -1,4 +1,6 @@
 .radio-feild__label {
+  position: relative;
+  padding-left: 50px;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -11,7 +13,50 @@
 
 @media (min-width: @tablet-width) {
   .radio-feild__label {
+    padding-left: 60px;
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.radio-feild__control-mark {
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #cdcdcd;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.radio-feild__control-mark:hover {
+  outline: 1px solid #cdcdcd;
+}
+
+.radio-feild__input:disabled ~ span {
+  opacity: 0.3;
+}
+
+.radio-feild__input[type="radio"]:checked + .radio-feild__control-mark::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  width: 13px;
+  height: 13px;
+  mask-image: url("../img/vector/stack.svg#checkbox-radio");
+  background-color: #68b738;
+
+  @media (min-width: @tablet-width) {
+    left: 11px;
+    top: 11px;
+    width: 18px;
+    height: 18px;
+    mask-image: url("../img/vector/stack.svg#checkbox-radio");
   }
 }

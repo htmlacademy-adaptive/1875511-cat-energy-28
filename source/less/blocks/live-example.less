@@ -4,13 +4,13 @@
 
 @media (min-width: @tablet-width) and (max-width: @desktop-width) {
   .live-example {
-    background: linear-gradient(to bottom, #ffffff 70%, #f2f2f2 30%);
+    background: linear-gradient(to bottom, #ffffff 598px, #f2f2f2 30%);
   }
 }
 
 @media (min-width: @desktop-width) {
   .live-example {
-    background: linear-gradient(to bottom, #ffffff 20%, #f2f2f2 20%);
+    background: linear-gradient(to bottom, #ffffff 138px, #f2f2f2 10%);
   }
 }
 
@@ -29,6 +29,7 @@
   .live-example__title {
     font-size: 60px;
     line-height: 60px;
+    padding: 20px 0 64px;
   }
 }
 
@@ -53,7 +54,7 @@
 
 @media (min-width: @tablet-width) {
   .live-example__text {
-    padding: 0 0 70px 0;
+    padding: 0 0 58px 0;
 
     font-size: 16px;
     line-height: 24px;
@@ -62,8 +63,10 @@
 
 @media (min-width: @desktop-width) {
   .live-example__text {
-    margin-top: 50px;
-    padding: 0 400px 85px 0;
+    width: 436px;
+    margin-top: 126px;
+    padding: 0 3px 72px 0;
+    box-sizing: border-box;
 
     font-size: 16px;
     line-height: 24px;
@@ -83,8 +86,16 @@
   }
 }
 
-@media (min-width: @tablet-width) and (max-width: @desktop-width) {
+@media (min-width: @tablet-width) and (max-width: 1439px) {
   .live-example__slider {
-    margin-top: 100px;
+    margin-top: 90px;
+    margin-left: 74px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .live-example__slider {
+    margin-top: 0;
+    margin-left: 224px;
   }
 }
