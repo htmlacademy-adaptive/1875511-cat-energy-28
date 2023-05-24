@@ -8,7 +8,7 @@
 @media (max-width: @mobile-width-only) {
   .primary-catalog__item {
     max-width: 280px;
-    margin-bottom: 30px;
+    margin-bottom: 23px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -33,7 +33,7 @@
 
 .primary-catalog__title {
   width: 80px;
-  margin-right: 60px;
+  margin: 22px 60px 14px 0;
 
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -137,9 +137,11 @@
 
 .primary-catalog__button {
   display: block;
-  margin-top: 20px;
+  margin-top: 22px;
   padding: 10px 110px;
   align-self: center;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 @media (max-width: @mobile-width-only) {
@@ -148,8 +150,8 @@
     content: "";
     width: 68px;
     height: 86px;
-    left: 40px;
-    top: 50px;
+    left: 35px;
+    top: 35px;
   }
 }
 
@@ -178,7 +180,10 @@
 
 .primary-catalog__button--secondary {
   display: block;
-  padding: 10px 100px;
+  box-sizing: border-box;
+  width: 280px;
+  height: 40px;
+  padding: 10px;
   position: relative;
 
   color: #444444;
@@ -209,6 +214,8 @@
 @media (min-width: @desktop-width) {
   .primary-catalog__button--secondary {
     padding: 10px 40px;
+    width: 170px;
+    height: 40px;
   }
 }
 
@@ -356,7 +363,7 @@
     margin: 0 0 68px 0;
     display: grid;
     grid-template-columns: 324px 324px;
-    gap: 60px;
+    gap: 140px 60px;
     justify-content: flex-start;
     align-items: flex-end;
   }
