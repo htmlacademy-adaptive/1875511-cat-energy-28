@@ -9,6 +9,9 @@
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font">
+    <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" type="font/woff2" as="font">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font">
   </head>
   <body class="page__body">
     <header class="page__header main-header container">
@@ -55,7 +58,7 @@
                   <ul class="form__feilds-list">
                     <li class="form__feilds-item text-feild">
                       <label class="text-feild__label">ИМЯ:*
-                        <input class="text-feild__input text-feild__input--name" type="text" name="name" placeholder="барсик" required>      <!-- text-feild__input--error = error -->
+                        <input class="text-feild__input text-feild__input--name" type="text" name="name" placeholder="барсик" required>
                       </label>
                     </li>
                     <li class="form__feilds-item text-feild">
@@ -75,21 +78,21 @@
                   <ul class="form__radio-list">
                     <li class="form__radio-item radio-feild">
                       <label class="radio-feild__label">
-                        <input class="radio-feild__input visually-hidden" type="radio" name="reduce" value="reduce" checked>
+                        <input class="radio-feild__input visually-hidden" type="radio" name="radio" value="reduce" checked>
                         <span class="radio-feild__control-mark"></span>
                         <span>похудение</span>
                       </label>
                     </li>
                     <li class="form__radio-item radio-feild">
                       <label class="radio-feild__label">
-                        <input class="radio-feild__input visually-hidden" type="radio" name="gain" value="gain">
+                        <input class="radio-feild__input visually-hidden" type="radio" name="radio" value="gain">
                         <span class="radio-feild__control-mark"></span>
                         <span>Набор массы</span>
                       </label>
                     </li>
                     <li class="form__radio-item radio-feild">
                       <label class="radio-feild__label">
-                        <input class="radio-feild__input visually-hidden" type="radio" name="undecided" value="undecided">
+                        <input class="radio-feild__input visually-hidden" type="radio" name="radio" value="undecided">
                         <span class="radio-feild__control-mark"></span>
                         <span>Не знаю (Нужен ваш совет)</span>
                       </label>
@@ -166,7 +169,7 @@
     <footer class="footer">
       <div class="footer__wrapper">
         <div class="footer__address address container container--form">
-          <div class="address__wrapper address--secondary">
+          <div class="address__wrapper">
             <p class="address__title">приглашаем к сотрудничеству дилеров!</p>
             <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
           </div>
